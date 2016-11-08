@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="@drawable/border_shadow_list"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearAvatar"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgSerie"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearAvatar"
+            android:id="@+id/linearDescription">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/txtTitulo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/txtGenero"
+                    android:layout_below="@+id/txtTitulo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/linearDescription"
+            android:layout_toEndOf="@+id/linearDescription"
+            android:id="@+id/linearArrow"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="false">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgArrow"
+                android:src="@drawable/arrow_icon"
+                android:textAlignment="viewEnd"
+                android:layout_gravity="left" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
